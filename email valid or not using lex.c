@@ -1,4 +1,3 @@
-/*lex code to accept a valid email */
 %
 {
 int flag = 0; %
