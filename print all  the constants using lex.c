@@ -1,10 +1,6 @@
-// Declaration Section
 %{
 %}
-
-%s A B C DEAD	 // Declaring states
-
-// Rules Section
+%s A B C DEAD	 
 %%
 <INITIAL>[0-9]+ BEGIN A;
 <INITIAL>[0-9]+[.][0-9]+ BEGIN B;
@@ -27,7 +23,6 @@
 
 %%
 
-// Auxiliary Functions
 int yywrap()
 {
 return 1;
