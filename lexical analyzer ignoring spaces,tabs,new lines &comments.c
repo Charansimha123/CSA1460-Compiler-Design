@@ -12,13 +12,12 @@ printf("\n%s is an identifier",str);
 main()
 {
 FILE *f1,*f2,*f3; char c, str[10], st1[10];
-int num[100], lineno=0, tokenvalue=0,i=0,j=0,k=0; printf("\n Enter the c program : ");/*gets(st1);*/ f1=fopen("input","w");
+int num[100], lineno=0, tokenvalue=0,i=0,j=0,k=0; printf("\n Enter the c program : ");
+f1=fopen("input","w");
 while((c=getchar())!=EOF) putc(c,f1);
-fclose(f1); f1=fopen("input","r"); f2=fopen("identifier","w");
-
+fclose(f1); f1=fopen("input","r"); 
+f2=fopen("identifier","w");
 f3=fopen("specialchar","w");
-
-
 while((c=getc(f1))!=EOF)
 {
 if(isdigit(c))
