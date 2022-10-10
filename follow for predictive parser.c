@@ -1,4 +1,7 @@
-#include<stdio.h> #include<ctype.h> #include<string.h> int limit, x = 0;
+#include<stdio.h>
+#include<ctype.h> 
+#include<string.h> 
+int limit, x = 0;
 char production[10][10], array[10];
 
 void find_first(char ch); void find_follow(char ch);
