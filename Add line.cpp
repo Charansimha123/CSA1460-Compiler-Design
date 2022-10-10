@@ -13,7 +13,7 @@ int main(int argc, char*argv[])
 {
 extern FILE *yyin; 
 
-yyin = fopen("testtest.c","r"); /
+yyin = fopen("testtest.c","r"); 
 
 yylex(); 
 return 0;
